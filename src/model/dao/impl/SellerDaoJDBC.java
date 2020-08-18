@@ -1,7 +1,6 @@
 package model.dao.impl;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -96,6 +95,8 @@ public class SellerDaoJDBC implements SellerDao {
 			st.setInt(1, id);
 
 			st.executeUpdate();
+			
+		
 
 		} catch (SQLException e) {
 			throw new DbException(e.getMessage());
